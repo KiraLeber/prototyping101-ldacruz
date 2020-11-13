@@ -24,8 +24,11 @@ public class PlayerController : MonoBehaviour
         // Move our hot red vehicle forward and backwards
         transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
 
-        // Turn our hot red vehicle, when pressing left and right keys
-        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput,Space.Self);
-
+        if (verticalInput > 0)
+        {
+            // If TRUE, e.g. if up or down arrow keys are pressed, do:
+            // Turn our hot red vehicle, when pressing left and right keys
+            transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput,Space.Self);
+        }
     }
 }
