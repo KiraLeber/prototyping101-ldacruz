@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 20f; // Speed for our hot red vehicle
     public float turnSpeed = 50f; // Turn speed for our hot red vehicle
-    public float verticalInput; // Input of arrow keys up and down
-    public float horizontalInput; // Input of arrow keys left and right
+    private float verticalInput; // Input of arrow keys up and down
+    private float horizontalInput; // Input of arrow keys left and right
 
     // Start is called before the first frame update
     void Start()
