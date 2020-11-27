@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    public float speed = 100f;
+    public float speed = 25f;
+    private Rigidbody _playerRb;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        _playerRb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-       transform.Translate(Vector3.forward * Time.deltaTime * speed);
+       _playerRb.AddForce(Vector3.forward * speed);
     }
 }

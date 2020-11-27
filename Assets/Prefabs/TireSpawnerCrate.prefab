@@ -92,4 +92,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cec8ac36db13844978c60016e1d4dc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crate: {fileID: 8618920602736261120, guid: bbe58c5d9e1874074aecbcc4b435c3ed, type: 3}
+  tire: {fileID: 8618920602736261120, guid: bbe58c5d9e1874074aecbcc4b435c3ed, type: 3}
